@@ -1,0 +1,22 @@
+-- Test Users
+INSERT INTO users (username, password) values
+('LoginTodoLogoutUsername1','password'),
+('LoginTodoLogoutUsername2','password'),
+('LoginTodoLogoutUsername3','password'),
+('LoginTodoLogoutUsername4','password'),
+('LoginTodoLogoutUsername5','password'),
+('LoginTodoLogoutUsername6','password'),
+('LoginTodoLogoutUsername7','password'),
+('LoginTodoLogoutUsername8','password'),
+('LoginTodoLogoutUsername9','password'),
+('LoginTodoLogoutUsername10','password'),
+('LoginTodoLogoutUsername11','password'),
+('LoginTodoLogoutUsername12','password'),
+('LoginTodoLogoutUsername13','password'),
+('LoginTodoLogoutUsername14','password'),
+('LoginTodoLogoutUsername15','password'),
+('LoginTodoLogoutUsername16','password'),
+('LoginTodoLogoutUsername17','password'),
+('LoginTodoLogoutUsername18','password'),
+('LoginTodoLogoutUsername19','password'),
+('LoginTodoLogoutUsername20','password');
