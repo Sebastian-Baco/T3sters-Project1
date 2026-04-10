@@ -16,3 +16,19 @@ do
     sqlite3 "$DB_NAME" "INSERT INTO users (username, password) VALUES ('${USR_PREFIX}${i}', '$USR_PWD');"
 done
 
+for i in $(seq 1 $N)
+do
+    USR="$USR_PREFIX${i}"
+    RANDOM_STRING=$(openssl rand -hex 12)
+    N_SUBTASKS=10
+    
+    echo "INSERT INTO todos (username, task, completed) VALUES ('${USR_PREFIX}${i}', '$RANDOM_STRING', false);"
+    TODO_ID=$(sqlite3 "$DB_NAME" "INSERT INTO todos (username, task, completed) VALUES ('${USR_PREFIX}${i}', '$RANDOM_STRING', false) RETURNING id;")
+
+    for i in $(seq 1 $N_SUBTASKS)
+    do
+        RANDOM_STRING=$(openssl rand -hex 12)
+        echo "INSERT INTO subtasks (todo_id, task, completed) VALUES ('$RANDOM_STRING', '$RANDOM_STRING', false);"
+        sqlite3 "$DB_NAME" "INSERT INTO subtasks (todo_id, task, completed) VALUES ('$TODO_ID', '$RANDOM_STRING', false);"
+    done
+done
