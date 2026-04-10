@@ -73,7 +73,7 @@ Currently disabled as we will probably just use a script instead.</stringProp>
         </elementProp>
       </SetupThreadGroup>
       <hashTree>
-        <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="User Index Counter">
+        <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="User Index Counter" enabled="true">
           <stringProp name="CounterConfig.start">1</stringProp>
           <stringProp name="CounterConfig.end"></stringProp>
           <stringProp name="CounterConfig.incr">1</stringProp>
@@ -83,7 +83,7 @@ Currently disabled as we will probably just use a script instead.</stringProp>
           <stringProp name="TestPlan.comments">Counter variable to register unique usernams (user_prefix1, user_prefix2, etc.)</stringProp>
         </CounterConfig>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST /register">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="POST /register" enabled="true">
           <stringProp name="HTTPSampler.domain">${HOST}</stringProp>
           <stringProp name="HTTPSampler.port">${PORT}</stringProp>
           <stringProp name="HTTPSampler.protocol">${SCHEME}</stringProp>
@@ -115,7 +115,7 @@ Currently disabled as we will probably just use a script instead.</stringProp>
           </HeaderManager>
           <hashTree/>
         </hashTree>
-        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -172,7 +172,8 @@ Currently disabled as we will probably just use a script instead.</stringProp>
           <stringProp name="parameters"></stringProp>
           <stringProp name="script">def threadId = ctx.getThreadNum()
 def userPrefix = vars.get(&quot;TEST_USER_PREFIX&quot;)
-def threadUser = userPrefix + (threadId + 1)
+def maxUsers = vars.get(&quot;TEST_USERS&quot;) as int
+def threadUser = userPrefix + ((threadId % maxUsers) + 1)
 
 vars.put(&quot;TEST_USER&quot;, threadUser)
 </stringProp>
@@ -225,7 +226,7 @@ vars.put(&quot;TEST_USER&quot;, threadUser)
           <intProp name="LoopController.loops">-1</intProp>
         </LoopController>
         <hashTree>
-          <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report">
+          <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
             <boolProp name="ResultCollector.error_logging">false</boolProp>
             <objProp>
               <name>saveConfig</name>
@@ -514,14 +515,14 @@ vars.put(&quot;TEST_USER&quot;, threadUser)
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
-              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Task ID JSON Extractor" enabled="true">
+              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Task ID JSON Extractor">
                 <stringProp name="JSONPostProcessor.referenceNames">TASK_ID</stringProp>
                 <stringProp name="JSONPostProcessor.jsonPathExprs">$.id</stringProp>
                 <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
               </JSONPostProcessor>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create/Edit Todos - GET /todo">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create/Edit Todos - GET /todo" enabled="true">
               <stringProp name="HTTPSampler.domain">${HOST}</stringProp>
               <stringProp name="HTTPSampler.port">${PORT}</stringProp>
               <stringProp name="HTTPSampler.protocol">${SCHEME}</stringProp>
@@ -610,7 +611,7 @@ vars.put(&quot;TEST_USER&quot;, threadUser)
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer">
+              <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="true">
                 <stringProp name="ConstantTimer.delay">4000</stringProp>
                 <stringProp name="RandomTimer.range">2000</stringProp>
               </GaussianRandomTimer>
@@ -740,7 +741,7 @@ vars.put(&quot;TEST_USER&quot;, threadUser)
         </hashTree>
       </hashTree>
       <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
-        <boolProp name="ResultCollector.error_logging">true</boolProp>
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
           <name>saveConfig</name>
           <value class="SampleSaveConfiguration">
