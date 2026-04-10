@@ -28,7 +28,7 @@ do
     for i in $(seq 1 $N_SUBTASKS)
     do
         RANDOM_STRING=$(openssl rand -hex 12)
-        echo "INSERT INTO subtasks (todo_id, task, completed) VALUES ('$RANDOM_STRING', '$RANDOM_STRING', false);"
+        echo "INSERT INTO subtasks (todo_id, task, completed) VALUES ('$TODO_ID', '$RANDOM_STRING', false);"
         sqlite3 "$DB_NAME" "INSERT INTO subtasks (todo_id, task, completed) VALUES ('$TODO_ID', '$RANDOM_STRING', false);"
     done
 done
