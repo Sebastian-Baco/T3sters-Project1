@@ -1,0 +1,35 @@
+2026-04-12T12:10:12.062-05:00  WARN 55657 --- [todo] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-12T12:11:51.243-05:00  WARN 55657 --- [todo] [nio-8080-exec-7] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 5, SQLState: null
+2026-04-12T12:11:51.244-05:00  WARN 55657 --- [todo] [nio-8080-exec-7] org.hibernate.orm.jdbc.error             : [SQLITE_BUSY] The database file is locked (database is locked)
+2026-04-12T12:11:56.704-05:00  WARN 55657 --- [todo] [nio-8080-exec-2] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 5, SQLState: null
+2026-04-12T12:11:56.705-05:00  WARN 55657 --- [todo] [nio-8080-exec-2] org.hibernate.orm.jdbc.error             : [SQLITE_BUSY] The database file is locked (database is locked)
+2026-04-12T12:11:57.705-05:00  WARN 55657 --- [todo] [nio-8080-exec-9] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 5, SQLState: null
+2026-04-12T12:11:57.705-05:00  WARN 55657 --- [todo] [nio-8080-exec-9] org.hibernate.orm.jdbc.error             : [SQLITE_BUSY] The database file is locked (database is locked)
+2026-04-12T12:11:59.954-05:00  WARN 55657 --- [todo] [io-8080-exec-26] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 5, SQLState: null
+2026-04-12T12:11:59.954-05:00  WARN 55657 --- [todo] [io-8080-exec-26] org.hibernate.orm.jdbc.error             : [SQLITE_BUSY] The database file is locked (database is locked)
+2026-04-12T12:12:43.654-05:00  WARN 55657 --- [todo] [o-8080-exec-119] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 5, SQLState: null
+2026-04-12T12:12:43.654-05:00  WARN 55657 --- [todo] [o-8080-exec-119] org.hibernate.orm.jdbc.error             : [SQLITE_BUSY] The database file is locked (database is locked)
+2026-04-12T12:12:46.971-05:00  WARN 55657 --- [todo] [o-8080-exec-167] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 5, SQLState: null
+2026-04-12T12:12:46.971-05:00  WARN 55657 --- [todo] [o-8080-exec-167] org.hibernate.orm.jdbc.error             : [SQLITE_BUSY] The database file is locked (database is locked)
+2026-04-12T12:14:12.628-05:00  WARN 55657 --- [todo] [io-8080-exec-33] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 5, SQLState: null
+2026-04-12T12:14:12.628-05:00  WARN 55657 --- [todo] [io-8080-exec-33] org.hibernate.orm.jdbc.error             : [SQLITE_BUSY] The database file is locked (database is locked)
+2026-04-12T12:14:12.630-05:00 ERROR 55657 --- [todo] [io-8080-exec-33] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.CannotAcquireLockException: could not execute statement [[SQLITE_BUSY] The database file is locked (database is locked)] [insert into users (password,username) values (?,?)]; SQL [insert into users (password,username) values (?,?)]] with root cause
+2026-04-12T12:14:20.901-05:00  WARN 55657 --- [todo] [io-8080-exec-26] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 5, SQLState: null
+2026-04-12T12:14:20.902-05:00  WARN 55657 --- [todo] [io-8080-exec-26] org.hibernate.orm.jdbc.error             : [SQLITE_BUSY] The database file is locked (database is locked)
+2026-04-12T12:14:23.413-05:00  WARN 55657 --- [todo] [o-8080-exec-170] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 5, SQLState: null
+2026-04-12T12:14:23.413-05:00  WARN 55657 --- [todo] [o-8080-exec-170] org.hibernate.orm.jdbc.error             : [SQLITE_BUSY] The database file is locked (database is locked)
+2026-04-12T12:14:24.123-05:00  WARN 55657 --- [todo] [o-8080-exec-133] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 5, SQLState: null
+2026-04-12T12:14:24.123-05:00  WARN 55657 --- [todo] [o-8080-exec-133] org.hibernate.orm.jdbc.error             : [SQLITE_BUSY] The database file is locked (database is locked)
+2026-04-12T12:14:38.643-05:00  WARN 55657 --- [todo] [io-8080-exec-93] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 5, SQLState: null
+2026-04-12T12:14:38.643-05:00  WARN 55657 --- [todo] [io-8080-exec-93] org.hibernate.orm.jdbc.error             : [SQLITE_BUSY] The database file is locked (database is locked)
+2026-04-12T12:15:18.006-05:00  WARN 55657 --- [todo] [o-8080-exec-161] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 5, SQLState: null
+2026-04-12T12:15:18.007-05:00  WARN 55657 --- [todo] [o-8080-exec-161] org.hibernate.orm.jdbc.error             : [SQLITE_BUSY] The database file is locked (database is locked)
+2026-04-12T12:15:21.796-05:00  WARN 55657 --- [todo] [o-8080-exec-102] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 5, SQLState: null
+2026-04-12T12:15:21.796-05:00  WARN 55657 --- [todo] [o-8080-exec-102] org.hibernate.orm.jdbc.error             : [SQLITE_BUSY] The database file is locked (database is locked)
+2026-04-12T12:15:49.075-05:00  WARN 55657 --- [todo] [o-8080-exec-130] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 5, SQLState: null
+2026-04-12T12:15:49.075-05:00  WARN 55657 --- [todo] [o-8080-exec-130] org.hibernate.orm.jdbc.error             : [SQLITE_BUSY] The database file is locked (database is locked)
+2026-04-12T12:16:13.907-05:00  WARN 55657 --- [todo] [io-8080-exec-10] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 5, SQLState: null
+2026-04-12T12:16:13.907-05:00  WARN 55657 --- [todo] [io-8080-exec-10] org.hibernate.orm.jdbc.error             : [SQLITE_BUSY] The database file is locked (database is locked)
+2026-04-12T12:16:47.564-05:00  WARN 55657 --- [todo] [io-8080-exec-35] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 5, SQLState: null
+2026-04-12T12:16:47.565-05:00  WARN 55657 --- [todo] [io-8080-exec-35] org.hibernate.orm.jdbc.error             : [SQLITE_BUSY] The database file is locked (database is locked)
+

@@ -1,0 +1,45 @@
+2026-04-12T11:40:39.192-05:00  WARN 15043 --- [todo] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-12T11:42:40.829-05:00  WARN 15043 --- [todo] [nio-8080-exec-6] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 5, SQLState: null
+2026-04-12T11:42:40.829-05:00  WARN 15043 --- [todo] [nio-8080-exec-6] org.hibernate.orm.jdbc.error             : [SQLITE_BUSY] The database file is locked (database is locked)
+2026-04-12T11:42:54.915-05:00  WARN 15043 --- [todo] [nio-8080-exec-5] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 5, SQLState: null
+2026-04-12T11:42:54.915-05:00  WARN 15043 --- [todo] [nio-8080-exec-5] org.hibernate.orm.jdbc.error             : [SQLITE_BUSY] The database file is locked (database is locked)
+2026-04-12T11:43:03.473-05:00  WARN 15043 --- [todo] [nio-8080-exec-8] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 5, SQLState: null
+2026-04-12T11:43:03.473-05:00  WARN 15043 --- [todo] [nio-8080-exec-8] org.hibernate.orm.jdbc.error             : [SQLITE_BUSY] The database file is locked (database is locked)
+2026-04-12T11:43:10.146-05:00  WARN 15043 --- [todo] [io-8080-exec-11] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 5, SQLState: null
+2026-04-12T11:43:10.146-05:00  WARN 15043 --- [todo] [io-8080-exec-11] org.hibernate.orm.jdbc.error             : [SQLITE_BUSY] The database file is locked (database is locked)
+2026-04-12T11:43:20.557-05:00  WARN 15043 --- [todo] [io-8080-exec-15] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 5, SQLState: null
+2026-04-12T11:43:20.558-05:00  WARN 15043 --- [todo] [io-8080-exec-15] org.hibernate.orm.jdbc.error             : [SQLITE_BUSY] The database file is locked (database is locked)
+2026-04-12T11:43:23.756-05:00  WARN 15043 --- [todo] [io-8080-exec-14] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 5, SQLState: null
+2026-04-12T11:43:23.756-05:00  WARN 15043 --- [todo] [io-8080-exec-14] org.hibernate.orm.jdbc.error             : [SQLITE_BUSY] The database file is locked (database is locked)
+2026-04-12T11:43:28.729-05:00  WARN 15043 --- [todo] [io-8080-exec-11] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 5, SQLState: null
+2026-04-12T11:43:28.729-05:00  WARN 15043 --- [todo] [io-8080-exec-11] org.hibernate.orm.jdbc.error             : [SQLITE_BUSY] The database file is locked (database is locked)
+2026-04-12T11:43:30.069-05:00  WARN 15043 --- [todo] [nio-8080-exec-3] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 5, SQLState: null
+2026-04-12T11:43:30.069-05:00  WARN 15043 --- [todo] [nio-8080-exec-3] org.hibernate.orm.jdbc.error             : [SQLITE_BUSY] The database file is locked (database is locked)
+2026-04-12T11:43:45.945-05:00  WARN 15043 --- [todo] [nio-8080-exec-1] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 5, SQLState: null
+2026-04-12T11:43:45.946-05:00  WARN 15043 --- [todo] [nio-8080-exec-1] org.hibernate.orm.jdbc.error             : [SQLITE_BUSY] The database file is locked (database is locked)
+2026-04-12T11:43:46.629-05:00  WARN 15043 --- [todo] [io-8080-exec-26] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 5, SQLState: null
+2026-04-12T11:43:46.629-05:00  WARN 15043 --- [todo] [io-8080-exec-26] org.hibernate.orm.jdbc.error             : [SQLITE_BUSY] The database file is locked (database is locked)
+2026-04-12T11:43:47.245-05:00  WARN 15043 --- [todo] [io-8080-exec-21] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 5, SQLState: null
+2026-04-12T11:43:47.246-05:00  WARN 15043 --- [todo] [io-8080-exec-21] org.hibernate.orm.jdbc.error             : [SQLITE_BUSY] The database file is locked (database is locked)
+2026-04-12T11:44:38.968-05:00  WARN 15043 --- [todo] [io-8080-exec-18] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 5, SQLState: null
+2026-04-12T11:44:38.969-05:00  WARN 15043 --- [todo] [io-8080-exec-18] org.hibernate.orm.jdbc.error             : [SQLITE_BUSY] The database file is locked (database is locked)
+2026-04-12T11:44:48.867-05:00  WARN 15043 --- [todo] [io-8080-exec-29] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 5, SQLState: null
+2026-04-12T11:44:48.867-05:00  WARN 15043 --- [todo] [io-8080-exec-29] org.hibernate.orm.jdbc.error             : [SQLITE_BUSY] The database file is locked (database is locked)
+2026-04-12T11:45:01.981-05:00  WARN 15043 --- [todo] [io-8080-exec-76] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 5, SQLState: null
+2026-04-12T11:45:01.981-05:00  WARN 15043 --- [todo] [io-8080-exec-76] org.hibernate.orm.jdbc.error             : [SQLITE_BUSY] The database file is locked (database is locked)
+2026-04-12T11:45:06.307-05:00  WARN 15043 --- [todo] [io-8080-exec-70] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 5, SQLState: null
+2026-04-12T11:45:06.307-05:00  WARN 15043 --- [todo] [io-8080-exec-70] org.hibernate.orm.jdbc.error             : [SQLITE_BUSY] The database file is locked (database is locked)
+2026-04-12T11:45:13.088-05:00  WARN 15043 --- [todo] [io-8080-exec-62] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 5, SQLState: null
+2026-04-12T11:45:13.088-05:00  WARN 15043 --- [todo] [io-8080-exec-62] org.hibernate.orm.jdbc.error             : [SQLITE_BUSY] The database file is locked (database is locked)
+2026-04-12T11:45:39.523-05:00  WARN 15043 --- [todo] [io-8080-exec-91] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 5, SQLState: null
+2026-04-12T11:45:39.523-05:00  WARN 15043 --- [todo] [io-8080-exec-91] org.hibernate.orm.jdbc.error             : [SQLITE_BUSY] The database file is locked (database is locked)
+2026-04-12T11:45:42.325-05:00  WARN 15043 --- [todo] [io-8080-exec-82] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 5, SQLState: null
+2026-04-12T11:45:42.326-05:00  WARN 15043 --- [todo] [io-8080-exec-82] org.hibernate.orm.jdbc.error             : [SQLITE_BUSY] The database file is locked (database is locked)
+2026-04-12T11:46:08.238-05:00  WARN 15043 --- [todo] [io-8080-exec-89] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 5, SQLState: null
+2026-04-12T11:46:08.238-05:00  WARN 15043 --- [todo] [io-8080-exec-89] org.hibernate.orm.jdbc.error             : [SQLITE_BUSY] The database file is locked (database is locked)
+2026-04-12T11:46:11.291-05:00  WARN 15043 --- [todo] [io-8080-exec-45] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 5, SQLState: null
+2026-04-12T11:46:11.292-05:00  WARN 15043 --- [todo] [io-8080-exec-45] org.hibernate.orm.jdbc.error             : [SQLITE_BUSY] The database file is locked (database is locked)
+2026-04-12T11:46:13.676-05:00  WARN 15043 --- [todo] [io-8080-exec-47] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 5, SQLState: null
+2026-04-12T11:46:13.676-05:00  WARN 15043 --- [todo] [io-8080-exec-47] org.hibernate.orm.jdbc.error             : [SQLITE_BUSY] The database file is locked (database is locked)
+2026-04-12T11:46:25.716-05:00  WARN 15043 --- [todo] [io-8080-exec-37] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 5, SQLState: null
+2026-04-12T11:46:25.716-05:00  WARN 15043 --- [todo] [io-8080-exec-37] org.hibernate.orm.jdbc.error             : [SQLITE_BUSY] The database file is locked (database is locked)
